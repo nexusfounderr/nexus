@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-red: #ff4655;
+    --primary-red-hover: #e03e4b;
+    --accent-purple: #7000ff;
+    --accent-purple-light: #a855f7;
+    --success-green: #00b894;
+    --bg-dark: #070913;
+    --card-bg: rgba(14, 20, 36, 0.85);
+    --card-border: rgba(255, 70, 85, 0.25);
+    --text-main: #f1f2f6;
+    --text-muted: #a4b0be;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
+
+@keyframes zoomPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+.animate-zoom-pulse {
+  animation: zoomPulse 2.4s infinite alternate ease-in-out;
+}
+
+@keyframes spinSlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-fast {
+  animation: spinSlow 0.85s linear infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070913;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(112, 0, 255, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4655;
+}

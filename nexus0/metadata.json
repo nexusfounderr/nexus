@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Esports - Valorant Iso Arena",
+  "description": "Valorant Iso temalı espor platformu; scrim lobileri, koçluk & VOD analizi, takım ve yetenek keşif merkezi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
